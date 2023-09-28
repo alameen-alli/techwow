@@ -12,7 +12,7 @@ const fs = require("fs");
 const path = require("path");
 const Post = require("./models/Post");
 
-app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
+app.use(cors({ credentials: true, origin: "http://localhost:4040" }));
 app.use(express.json());
 app.use(cookieParser());
 app.use("/uploads", express.static(__dirname + "/uploads"));
